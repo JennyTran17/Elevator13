@@ -12,7 +12,7 @@ public class Elevator_OpenClose : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             doorLeft.SetTrigger("open");
-            //doorRight.SetTrigger("open");
+            doorRight.SetTrigger("open");
         }
     }
 
@@ -21,6 +21,7 @@ public class Elevator_OpenClose : MonoBehaviour
         if (other.gameObject.CompareTag("Player"))
         {
             doorLeft.SetTrigger("close");
+            doorRight.SetTrigger("close");
         }
     }
 }
